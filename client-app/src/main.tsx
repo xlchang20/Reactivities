@@ -3,6 +3,7 @@
 // import App from './App.tsx'
 // import './index.css'
 import ReactDOM from 'react-dom'
+import 'react-calendar/dist/Calendar.css'
 import './app/layout/styles.css'
 import { store, StoreContext } from './app/stores/store';
 import { RouterProvider } from 'react-router-dom';
