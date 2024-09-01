@@ -3,9 +3,10 @@
 // import App from './App.tsx'
 // import './index.css'
 import ReactDOM from 'react-dom'
-import App from './app/layout/App'
 import './app/layout/styles.css'
 import { store, StoreContext } from './app/stores/store';
+import { RouterProvider } from 'react-router-dom';
+import { router } from './app/router/Routes';
 //import reportWebVitals from './reportWebVitals';
 
 
@@ -20,7 +21,7 @@ import { store, StoreContext } from './app/stores/store';
 ReactDOM.render(
   //<React.StrictMode>
     <StoreContext.Provider value={store}>
-      <App />
+      <RouterProvider router={router} />
     </StoreContext.Provider>,
   //</React.StrictMode>,
   document.getElementById('root')
